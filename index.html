@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Not your keys - Not your coins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="caixa-video">
+     <video src="./img/15  Ultimate 4K Live Wallpapers for a Dynamic Experience(MP4).mp4" class="videoport" autoplay muted loop playsinline></video>
+     </div>
+    <img src="./img/bitcoin.gif" alt="Logobitcoin" class="logobitcoin">
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select class="currency-to-select">
+                <option value="dereal">Real</option>
+                <option value="dedolar">Dolar</option>
+                <option value="deeuro">Euro</option>
+                <option value="debtc">Bitcoin</option>
+            </select>
+        </label>
+        <label>
+            Converter <b>para</b>
+            <select class="currency-select">
+                <option value="dolar">Dolar</option>
+                <option value="real">Real</option>
+                <option value="euro">Euro</option>
+                <option value="btc">Bitcoin</option>
+            </select>
+        </label>
+        <label>
+            Valor
+            <input class="input-currency" placeholder="Digite o valor">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <!-- SEÇÃO DE RESULTADOS REFEITA -->
+        <section class="currency-container-wrapper">
+            <!-- Bloco da Moeda de Origem (DE ) -->
+            <div class="currency-container">
+                <img id="img-from" src="./img/bandeira do brasil.jpg" alt="Moeda de origem">
+                <p class="currency" id="currency-name-from">Real Brasileiro</p>
+                <p class="valor-money" id="currency-value-from">R$ 0,00</p>
+            </div>
+
+            <img class="arrow-icon" src="./img/seta-red.gif" alt="Seta de conversão">
+
+            <!-- Bloco da Moeda de Destino (PARA) -->
+            <div class="currency-container">
+                <img id="img-to" src="./img/Bandeira dos USA.jpg" alt="Moeda de destino">
+                <p class="currency" id="currency-name-to">Dólar Americano</p>
+                <p class="valor-money" id="currency-value-to">$ 0.00</p>
+            </div>
+        </section>
+        <!-- FIM DA SEÇÃO REFEITA -->
+
+        <div class="button-container-1">
+            <span class="mas">FINALIZAR</span>
+            <button id='work' type="button" name="Hover">CLICK</button>
+        </div>
+    </main>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>

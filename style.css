@@ -1,0 +1,175 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    outline: none;
+}
+
+
+
+.logobitcoin {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 100px;
+}
+
+main {
+    width: 450px;
+    background: -webkit-repeating-linear-gradient(rgba(45, 43, 56, 0.758), rgba(25, 0, 255, 0.516), rgb(153, 146, 191));
+    border-radius: 10px;
+    margin: auto;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select,
+input {
+    background: white;
+    border: 1px solid beige;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.convert-button {
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 200px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.convert-button:hover {
+    background-color: #555;
+}
+
+/* ESTILOS PARA A NOVA SEÇÃO DE RESULTADOS */
+.currency-container-wrapper {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre os elementos */
+}
+
+.currency-container {
+    text-align: center;
+    color: white;
+}
+
+.currency-container img {
+    width: 60px; /* Imagens menores para caber melhor */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.valor-money {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.arrow-icon {
+    width: 35px;
+}
+
+/* BOTÃO ANIMADO CORRIGIDO */
+.button-container-1 {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 40px auto 0 auto;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-container-1 .mas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.button-container-1 button {
+    width: 101%;
+    height: 100%;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* Máscara */
+    -webkit-mask-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png" );
+    mask-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png" );
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    
+    /* Estado inicial da máscara e transição */
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+    transition: mask-position 0.7s steps(22);
+    -webkit-transition: -webkit-mask-position 0.7s steps(22);
+}
+
+.button-container-1:hover button {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
