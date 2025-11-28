@@ -141,19 +141,14 @@ function changeCurrencyTo() {
     resetValues();
 }
 
-// 1. Seleciona o botão pelo ID
-const finishButton = document.getElementById('work');
+const finishButton = document.getElementById("work");
 
-
+// 2. Cria a função de agradecimento
 function showThankYouMessage() {
-    
     alert("Obrigado por usar nossos serviços!");
-
 }
-finishButton.addEventListener('click', showThankYouMessage);
-
-
 
 convertButton.addEventListener("click", convertValues);
 currencySelectFrom.addEventListener("change", changeCurrencyFrom);
 currencySelectTo.addEventListener("change", changeCurrencyTo);
+finishButton.addEventListener("click", showThankYouMessage);

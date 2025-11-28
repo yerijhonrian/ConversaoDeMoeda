@@ -9,6 +9,10 @@
     outline: none;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
 
 
 .logobitcoin {
@@ -114,6 +118,7 @@ input {
     cursor: pointer;
 }
 
+/* 1. Descomente este bloco e defina z-index: 1 */
 .button-container-1 .mas {
     position: absolute;
     width: 100%;
@@ -125,8 +130,15 @@ input {
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1px;
-    z-index: 1;
+    z-index: 1; /* O elemento de trás */
 }
+
+
+.button-container-1 button {
+    /* ... outros estilos ... */
+    z-index: 2; /* O elemento da frente, que recebe o clique */
+}
+
 
 .button-container-1 button {
     width: 101%;
@@ -172,4 +184,10 @@ video {
     position: fixed;
     top: 0;
     z-index: -1;
+}
+
+@media (max-width: 500px)  {
+    main {width: 100%;
+    height: 100%;}
+    
 }
