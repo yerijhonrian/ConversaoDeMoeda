@@ -55,7 +55,7 @@ function formatByCurrency(amount, currency) {
     return new Intl.NumberFormat("pt-BR", options).format(amount);
 }
 
-// >>> NOVA FUNÇÃO PARA LIMPAR OS VALORES <<<
+// >>> FUNÇÃO PARA LIMPAR OS VALORES <<<
 function resetValues() {
     const fromCurrency = mapFrom(currencySelectFrom.value);
     const toCurrency = mapTo(currencySelectTo.value);
@@ -65,7 +65,7 @@ function resetValues() {
     toValue.textContent = formatByCurrency(0, toCurrency);
 }
 
-// Função principal de conversão (agora só chamada pelo botão)
+// Função principal de conversão 
 function convertValues() {
     const fromCurrency = mapFrom(currencySelectFrom.value);
     const toCurrency = mapTo(currencySelectTo.value);
