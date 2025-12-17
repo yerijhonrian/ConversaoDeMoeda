@@ -118,7 +118,6 @@ input {
     cursor: pointer;
 }
 
-/* 1. Descomente este bloco e defina z-index: 1 */
 .button-container-1 .mas {
     position: absolute;
     width: 100%;
