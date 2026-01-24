@@ -18,10 +18,10 @@ const toValue = document.getElementById("currency-value-to");
 
 // Taxas de câmbio: Preço de 1 unidade da moeda em Reais (BRL)
 let exchangeRates = {};
-
+// API É SEMPRE NO .env USE ESTE EXEMPLO COMO PARTE DO SEU APRENDIZADO.
 async function loadExchangeRates() {
     try {
-        const response = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL");
+        const response = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"); //Coloque no .env esta api isso é só um TESTE.✍️(◔◡◔)
         const data = await response.json();
         exchangeRates = {
             USD: parseFloat(data.USDBRL.ask),
